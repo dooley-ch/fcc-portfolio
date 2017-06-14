@@ -1,4 +1,8 @@
 $(function () {
+    $(window).on("load resize", function () {
+        $(".fill-screen").css("height", window.innerHeight);
+    });
+
     // add Bootstrap's scrollspy
     $('body').scrollspy({
         target: '.navbar',
@@ -6,10 +10,10 @@ $(function () {
     });
 
     // smooth scrolling
-    $('nav a').bind('click', function () {
+    $('nav a, .down-button a').bind('click', function () {
         $('html, body').stop().animate({
             scrollTop: $($(this).attr('href')).offset().top - 70
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
-    });
+    });    
 });

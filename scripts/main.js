@@ -75,6 +75,18 @@ define("app", function (require, exports) {
         $("#downButton").click(function () {
             $.fn.fullpage.moveTo("welcomePage");
         });        
+
+        $("#twitterButton").click(function () {
+            window.open("https://twitter.com/codesurge_xyz");
+        });
+
+        $("#githubButton").click(function () {
+            window.open("https://github.com/codesurge-xyz");
+        });
+
+        $("#linkedinButton").click(function () {
+            window.open("https://www.linkedin.com/in/jamesadooley");
+        });
     }
 
     exports.init = function () {

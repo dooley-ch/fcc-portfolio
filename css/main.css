@@ -59,6 +59,14 @@
     border-top-right-radius: 0px !important;
 }
 
+.mouseHand {
+    cursor:pointer;
+}
+
+.white {
+    color: white !important;
+}
+
 .margin-0 {
     margin: 0px !important;
 }

@@ -71,6 +71,10 @@ define("app", function (require, exports) {
         $("#contactPageMenu").click(function () {
             $.fn.fullpage.moveTo("contactPage");
         });
+
+        $("#downButton").click(function () {
+            $.fn.fullpage.moveTo("welcomePage");
+        });        
     }
 
     exports.init = function () {

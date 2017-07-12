@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "FCC project",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files './' --browser 'FirefoxDeveloperEdition'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codesurge-xyz/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codesurge-xyz/portfolio/issues"
+  },
+  "homepage": "https://github.com/codesurge-xyz/portfolio#readme"
+}

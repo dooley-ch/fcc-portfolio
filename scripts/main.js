@@ -23,11 +23,11 @@ define("app", function (require, exports) {
     "use strict";
 
     var $ = require("jquery");
-    //var _ = require("underscore");
+    var _ = require("underscore");
 
     require("semantic");
     require("fullpage");
-    
+
     function _toggleMenuStatus(index, nextIndex) {
         function getTag(i) {
             switch (i) {
@@ -87,6 +87,14 @@ define("app", function (require, exports) {
         $("#linkedinButton").click(function () {
             window.open("https://www.linkedin.com/in/jamesadooley");
         });
+
+        $("button[data-target]").click(function (e) {
+            var url = e.currentTarget.dataset.target;
+
+            if (url) {
+                window.open(url);
+            }
+        })
     }
 
     exports.init = function () {
